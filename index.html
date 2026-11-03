@@ -1,26 +1,63 @@
- <!DOCTYPE html>
- <html lang="en">
- <head>
+<!DOCTYPE html>
+<html lang="en">
+<head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-        <link rel="stylesheet" href="style.css">
- </head>
- <body>
-   <h1>Halo,gua Khalil,18 tahun</h1>
-    <p>gua lagi belajar HTML ni</p>
-    <h2>Hobi gua:</h2>
-    <ul>
-        <li>Main game</li>
-        <li>Main poli</li>
-    </ul>
-    <img src="https://picsum.photos/400" alt="Foto random"> 
-    <br><br>
-    <button onclick="sapagua()">Klik gua!</button>
-    <div class="barisan-kotak">
-        <div class="kotak">kotak 1</div>
-        <div class="kotak">kotak 2</div>
+    <title>Crypto Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- 1. NAVBAR -->
+    <nav class="navbar">
+        <div class="logo">cryptodash</div>
+        <div class="menu">
+            <a href="#">home</a>
+            <a href="#">market</a>
+            <a href="#">portfolio</a>
+        </div>
+    </nav>
+
+    <!-- 2. CRYPTO GRID -->
+    <h2>Market Hari Ini</h2>
+    <div class="grid-crypto">
+        <div class="card-crypto">
+            <h3>Bitcoin (BTC)</h3>
+            <p>Harga: $65,000</p>
+        </div>
+        <div class="card-crypto">
+            <h3>Ethereum (ETH)</h3>
+            <p>Harga: $3,500</p>
+        </div>
+        <div class="card-crypto">
+            <h3>Solana (SOL)</h3>
+            <p>Harga: $150</p>
+        </div>
     </div>
+
+    <!-- 3. PROFIL CARD (Konten lama lo) -->
+    <h2>Profil Saya</h2>
+    <div class="kartu">
+        <h1>Halo, gua Khalil, 18 tahun</h1>
+        <p>gua lagi belajar HTML ni</p>
+        
+        <h3>Hobi gua:</h3>
+        <ul>
+            <li>Main game</li>
+            <li>Main poli</li>
+        </ul>
+        
+        <img src="https://picsum.photos/400" alt="Foto random">
+        <br><br>
+        <button onclick="sapaGua()">Klik gua!</button>
+        
+        <div class="barisan-kotak">
+            <div class="kotak">kotak 1</div>
+            <div class="kotak">kotak 2</div>
+        </div>
+    </div>
+
+    <!-- 4. JAVASCRIPT -->
     <script src="app.js"></script>
- </body>
- </html>   
+</body>
+</html>

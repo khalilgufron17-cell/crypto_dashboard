@@ -1,14 +1,105 @@
+/* =========================================
+   1. PENGATURAN DASAR (BODY)
+   ========================================= */
 body {
-    background-color: #1a1a1a; /* Warna background gelap */
-    color: white; /* Warna teks jadi putih */
-    text-align: left; /* Semua teks ketengah */
-    font-family: Arial, sans-serif; /* Jenis font */
+    background-color: #1a1a1a;
+    color: white;
+    font-family: Arial, sans-serif;
+    padding: 20px 50px; /* Jarak pinggir layar kiri-kanan */
+    margin: 0;
 }
 
-img {
-    border-radius: 20px; /* Bikin sudut gambar jadi tumpul/bulat */
-    margin-top: 20px; /* Kasih jarak dari list di atasnya */
+/* =========================================
+   2. NAVBAR (HARI 3)
+   ========================================= */
+.navbar {
+    display: flex;
+    justify-content: space-between; /* Logo kiri, Menu kanan */
+    align-items: center; /* Sejajar tengah */
+    background-color: #222;
+    padding: 15px 30px;
+    border-radius: 10px;
+    margin-bottom: 30px;
 }
+
+.logo {
+    font-size: 20px;
+    font-weight: bold;
+    color: #00ffcc; /* Warna Cyan */
+}
+
+.menu a {
+    color: white;
+    text-decoration: none;
+    margin-left: 20px;
+    font-size: 14px;
+}
+
+.menu a:hover {
+    color: #00ffcc;
+}
+
+/* =========================================
+   3. GRID CRYPTO (HARI 3)
+   ========================================= */
+.grid-crypto {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    margin-bottom: 40px;
+}
+
+.card-crypto {
+    background-color: #2a2a2a;
+    padding: 20px;
+    border-radius: 10px;
+    border-left: 5px solid #00ffcc;
+    transition: 0.3s;
+}
+
+.card-crypto:hover {
+    background-color: #333;
+    transform: translateY(-5px); /* Efek naik */
+}
+
+.card-crypto h3 {
+    margin-top: 0;
+    color: white;
+}
+
+.card-crypto p {
+    color: #aaa;
+}
+
+/* =========================================
+   4. KARTU PROFIL (HARI 1 & 2)
+   ========================================= */
+.kartu {
+    background-color: #2a2a2a;
+    width: 350px;
+    padding: 30px;
+    border-radius: 15px;
+}
+
+.kartu h1 {
+    margin-top: 0;
+}
+
+.kartu ul {
+    list-style-type: none; /* Hilangkan titik list */
+    padding: 0;
+}
+
+.kartu img {
+    border-radius: 20px;
+    margin-top: 20px;
+    width: 100%; /* Biar gambar nyesuaiin lebar kotak */
+    max-width: 300px;
+}
+
+/* =========================================
+   5. TOMBOL (HARI 2)
+   ========================================= */
 button {
     background-color: #0056b3;
     color: white;
@@ -19,17 +110,22 @@ button {
     font-weight: bold;
     margin-top: 15px;
 }
+
 button:hover {
     background-color: #003d82;
 }
+
+/* =========================================
+   6. FLEXBOX KOTAK (HARI 2)
+   ========================================= */
 .barisan-kotak {
-    display: flex; /* INI KUNCI SIHIRNYA */
-    gap: 10px; /* Kasih jarak antar kotak */
-    margin-bottom: 20px; /* Jarak dari elemen di bawahnya */
+    display: flex;
+    gap: 10px;
+    margin-top: 20px;
 }
 
 .kotak {
-    background-color: #444; /* Warna abu-abu */
+    background-color: #444;
     padding: 20px;
     border-radius: 8px;
     width: 100px;
