@@ -131,3 +131,54 @@ button:hover {
     width: 100px;
     text-align: center;
 }
+/* =========================================
+   7. MODE TERANG (LIGHT MODE)
+   ========================================= */
+.light-mode {
+    background-color: #f4f4f9; /* Background jadi putih/abu terang */
+    color: #111; /* Teks jadi hitam */
+}
+
+/* Biar navbar dan kotak ikut jadi terang */
+.light-mode .navbar, 
+.light-mode .card-crypto, 
+.light-mode .kartu {
+    background-color: #ffffff;
+    color: #111;
+    border: 1px solid #ddd; /* Kasih garis tipis biar kelihatan batasnya */
+}
+
+/* Teks menu juga diubah jadi hitam */
+.light-mode .menu a {
+    color: #111;
+}
+
+/* Harga crypto & teks di dalam kotak biar hitam */
+.light-mode .card-crypto h3, 
+.light-mode .card-crypto p {
+    color: #111;
+}
+
+/* Efek transisi biar pas ganti tema nggak kaget (mulus) */
+body {
+    transition: background-color 0.3s, color 0.3s;
+}
+/* Paksa body jadi terang kalau ada class light-mode */
+body.light-mode {
+    background-color: #f4f4f9 !important; 
+    color: #111 !important;
+}
+
+/* Paksa navbar dan kartu jadi terang */
+body.light-mode .navbar, 
+body.light-mode .card-crypto, 
+body.light-mode .kartu {
+    background-color: #ffffff !important;
+    color: #111 !important;
+}
+
+body.light-mode .menu a,
+body.light-mode .card-crypto h3, 
+body.light-mode .card-crypto p {
+    color: #111 !important;
+}
