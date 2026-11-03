@@ -9,3 +9,29 @@ img {
     border-radius: 20px; /* Bikin sudut gambar jadi tumpul/bulat */
     margin-top: 20px; /* Kasih jarak dari list di atasnya */
 }
+button {
+    background-color: #0056b3;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    margin-top: 15px;
+}
+button:hover {
+    background-color: #003d82;
+}
+.barisan-kotak {
+    display: flex; /* INI KUNCI SIHIRNYA */
+    gap: 10px; /* Kasih jarak antar kotak */
+    margin-bottom: 20px; /* Jarak dari elemen di bawahnya */
+}
+
+.kotak {
+    background-color: #444; /* Warna abu-abu */
+    padding: 20px;
+    border-radius: 8px;
+    width: 100px;
+    text-align: center;
+}
