@@ -1,0 +1,11 @@
+body {
+    background-color: #1a1a1a; /* Warna background gelap */
+    color: white; /* Warna teks jadi putih */
+    text-align: left; /* Semua teks ketengah */
+    font-family: Arial, sans-serif; /* Jenis font */
+}
+
+img {
+    border-radius: 20px; /* Bikin sudut gambar jadi tumpul/bulat */
+    margin-top: 20px; /* Kasih jarak dari list di atasnya */
+}
